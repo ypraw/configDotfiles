@@ -1,0 +1,6 @@
+configuration{
+show-icons:true;
+drun-icon-theme:"PAPER-Vimix";
+theme:"vimix";
+}
+

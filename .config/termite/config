@@ -1,0 +1,65 @@
+[options]
+allow_bold = true
+audible_bell = true
+clickable_url = true
+dynamic_title = true
+font = Hack 10
+scroll_on_keystroke = true
+scrollback_lines = 10000
+search_wrap = true
+urgent_on_bell = true
+hyperlinks = true
+browser = xdg-open
+cursor_blink = on
+cursor_shape =ibeam
+size_hints = false
+geometry= 850x450
+[colors]
+# If both of these are unset, cursor falls back to the foreground color,
+# and cursor_foreground falls back to the background color.
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+
+foreground = #C7D1D2
+#foreground_bold = #ffffff
+background = #3B4342
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+# If unset, will reverse foreground and background
+highlight = #2f2f2f
+
+# Colors from color0 to color254 can be set
+
+color0 = #818C8D
+color1 = #FF2B4F
+color2 = #00FF73
+color3 = #FCDB00
+color4 = #506070
+color5 = #CC6EFD
+color6 = #FF47C6
+color7 = #C6D4D3
+
+color8 = #818C8D
+color9 = #FF2B4F
+color10 = #00FF73
+color11 = #FCDB00
+color12 = #506070
+color13 = #CC6EFD
+color14 = #FF47C6
+color15 = #C6D4D3
+
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="File Manager" icon="/home/ypraw/.config/obmenu-generator/icons/e5efbf4e419e44944048a84ef6705133.png"><action name="Execute"><command><![CDATA[xdg-open .]]></command></action></item>
+    <item label="Terminal" icon="/home/ypraw/.config/obmenu-generator/icons/659cbb9566075e99645f47b679c90381.png"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+    <item label="Web Browser" icon="/home/ypraw/.config/obmenu-generator/icons/e430ebefaa793d34270a28c0dac0ea74.png"><action name="Execute"><command><![CDATA[xdg-open http://]]></command></action></item>
+    <item label="Run command" icon="/home/ypraw/.config/obmenu-generator/icons/1e5346fa4ac1d03e20c371b8f2f55b01.png"><action name="Execute"><command><![CDATA[gmrun]]></command></action></item>
+  <separator label="Categories"/>
+  <menu id="0.871354120158689" icon="/home/ypraw/.config/obmenu-generator/icons/8fb1f951b874fe52835317f072046c5d.png" label="Accessories">
+    <item label="Ark" icon="/home/ypraw/.config/obmenu-generator/icons/e9f57824838bfef856e9302f1ac9b9ff.png"><action name="Execute"><command><![CDATA[ark]]></command></action></item>
+    <item label="Atom" icon="/home/ypraw/.config/obmenu-generator/icons/21614a0fab0916a8a5d6e9102ee5a426.png"><action name="Execute"><command><![CDATA[electron --app=/usr/lib/atom]]></command></action></item>
+    <item label="compton" icon="/home/ypraw/.config/obmenu-generator/icons/6986eaf875163f4beffbf62db3bb7f57.png"><action name="Execute"><command><![CDATA[compton --xrender-sync-fence]]></command></action></item>
+    <item label="Elementary Test" icon="/home/ypraw/.config/obmenu-generator/icons/9beb7aea57772940a2b3d08c296ade01.png"><action name="Execute"><command><![CDATA[elementary_test]]></command></action></item>
+    <item label="Filelight" icon="/home/ypraw/.config/obmenu-generator/icons/a2f3072a719f5675b750b1122ae8da02.png"><action name="Execute"><command><![CDATA[filelight]]></command></action></item>
+    <item label="HP Device Manager" icon="/home/ypraw/.config/obmenu-generator/icons/f08018c4db4c0bb1154ca225bd7fa95e.png"><action name="Execute"><command><![CDATA[hp-toolbox]]></command></action></item>
+    <item label="Kate" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png"><action name="Execute"><command><![CDATA[kate -b]]></command></action></item>
+    <item label="KCalc" icon="/home/ypraw/.config/obmenu-generator/icons/dbab99ca8071309c6f0a81ed0911c7df.png"><action name="Execute"><command><![CDATA[kcalc]]></command></action></item>
+    <item label="KFind" icon="/home/ypraw/.config/obmenu-generator/icons/fde9460f6e239b2242e1a7650288acea.png"><action name="Execute"><command><![CDATA[kfind]]></command></action></item>
+    <item label="Kleopatra" icon="/home/ypraw/.config/obmenu-generator/icons/7351af03cbb7a933a31a02136a66c730.png"><action name="Execute"><command><![CDATA[kleopatra]]></command></action></item>
+    <item label="Klipper" icon="/home/ypraw/.config/obmenu-generator/icons/fe8153c6bce88846a59d97cc5c81d8ca.png"><action name="Execute"><command><![CDATA[klipper]]></command></action></item>
+    <item label="KWrite" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png"><action name="Execute"><command><![CDATA[kwrite]]></command></action></item>
+    <item label="Manjaro User Guide" icon="/home/ypraw/.config/obmenu-generator/icons/48d5f89f13fbc8b3c8fa188cd7861fad.png"><action name="Execute"><command><![CDATA[/usr/bin/manjaro-documentation]]></command></action></item>
+    <item label="Mousepad" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png"><action name="Execute"><command><![CDATA[mousepad]]></command></action></item>
+    <item label="nitrogen" icon="/home/ypraw/.config/obmenu-generator/icons/f21bc20e202661aa67c8db3ada1a812e.png"><action name="Execute"><command><![CDATA[nitrogen]]></command></action></item>
+    <item label="PCManFM File Manager" icon="/home/ypraw/.config/obmenu-generator/icons/e5efbf4e419e44944048a84ef6705133.png"><action name="Execute"><command><![CDATA[pcmanfm-qt]]></command></action></item>
+    <item label="Spectacle" icon="/home/ypraw/.config/obmenu-generator/icons/c6a0743b38f0cd30221db19426299db0.png"><action name="Execute"><command><![CDATA[spectacle]]></command></action></item>
+    <item label="SUSE Studio Imagewriter" icon="/home/ypraw/.config/obmenu-generator/icons/368e0f01fd92a0e02e0b6e132b64162b.png"><action name="Execute"><command><![CDATA[imagewriter]]></command></action></item>
+    <item label="Task Manager" icon="/home/ypraw/.config/obmenu-generator/icons/8fb1f951b874fe52835317f072046c5d.png"><action name="Execute"><command><![CDATA[xfce4-taskmanager]]></command></action></item>
+    <item label="Visual Studio Code" icon="/home/ypraw/.config/obmenu-generator/icons/c010c03f1fb2b5d10dd03c735e6d63af.png"><action name="Execute"><command><![CDATA[/usr/bin/code]]></command></action></item>
+  </menu>
+  <menu id="0.483403737281577" icon="/home/ypraw/.config/obmenu-generator/icons/c6a9f2a61d31198fc1fc3945ae45ad7e.png" label="Development">
+    <item label="Atom" icon="/home/ypraw/.config/obmenu-generator/icons/21614a0fab0916a8a5d6e9102ee5a426.png"><action name="Execute"><command><![CDATA[electron --app=/usr/lib/atom]]></command></action></item>
+    <item label="CMake" icon="/home/ypraw/.config/obmenu-generator/icons/01b3cfac4249074161c1c26c6fba3c1b.png"><action name="Execute"><command><![CDATA[cmake-gui]]></command></action></item>
+    <item label="Electron" icon="/home/ypraw/.config/obmenu-generator/icons/e7bd7a6bd9f74aeca81ac692261c6bf3.png"><action name="Execute"><command><![CDATA[electron]]></command></action></item>
+    <item label="Elementary Test" icon="/home/ypraw/.config/obmenu-generator/icons/9beb7aea57772940a2b3d08c296ade01.png"><action name="Execute"><command><![CDATA[elementary_test]]></command></action></item>
+    <item label="FLUID" icon="/home/ypraw/.config/obmenu-generator/icons/e661e3f45d620805aa2b5d31ec3fa16f.png"><action name="Execute"><command><![CDATA[fluid]]></command></action></item>
+    <item label="Geany" icon="/home/ypraw/.config/obmenu-generator/icons/b5b488360d6e7ce31de343681e867051.png"><action name="Execute"><command><![CDATA[geany]]></command></action></item>
+    <item label="IntelliJ IDEA" icon="/home/ypraw/.config/obmenu-generator/icons/af8632d3f1b818dbe5744934e2400c19.png"><action name="Execute"><command><![CDATA["/home/ypraw/Programs/idea-IU-172.4155.36/bin/idea.sh"]]></command></action></item>
+    <item label="PyCharm" icon="/home/ypraw/.config/obmenu-generator/icons/c4d31ca2b95aa6efbbd95b56232a4f3a.png"><action name="Execute"><command><![CDATA["/home/ypraw/Programs/pycharm-2017.2.3/bin/pycharm.sh"]]></command></action></item>
+    <item label="PyCharm" icon="/home/ypraw/.config/obmenu-generator/icons/c4d31ca2b95aa6efbbd95b56232a4f3a.png"><action name="Execute"><command><![CDATA["/home/ypraw/Programs/pycharm-2017.2.3/bin/pycharm.sh"]]></command></action></item>
+    <item label="Qt Assistant" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[assistant]]></command></action></item>
+    <item label="Qt Designer" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[designer]]></command></action></item>
+    <item label="Qt Linguist" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[linguist]]></command></action></item>
+    <item label="Qt QDbusViewer" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[qdbusviewer]]></command></action></item>
+    <item label="Qt4 Assistant" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[assistant-qt4]]></command></action></item>
+    <item label="Qt4 Designer" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[designer-qt4]]></command></action></item>
+    <item label="Qt4 Linguist" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[linguist-qt4]]></command></action></item>
+    <item label="Qt4 QDbusViewer" icon="/home/ypraw/.config/obmenu-generator/icons/ce3f6314ad2e34b46a8f02f56fd93823.png"><action name="Execute"><command><![CDATA[qdbusviewer-qt4]]></command></action></item>
+    <item label="Visual Studio Code" icon="/home/ypraw/.config/obmenu-generator/icons/c010c03f1fb2b5d10dd03c735e6d63af.png"><action name="Execute"><command><![CDATA[/usr/bin/code]]></command></action></item>
+  </menu>
+  <menu id="0.673678624016372" icon="/home/ypraw/.config/obmenu-generator/icons/fb907aea6dd01ecc64dfbc02ca0b5773.png" label="Education">
+    <item label="LibreOffice Math" icon="/home/ypraw/.config/obmenu-generator/icons/4fc80c5e93b823c0205dfb797261ed65.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+    <item label="Mendeley Desktop" icon="/home/ypraw/.config/obmenu-generator/icons/3b2c569cdb1b8cd8a0f8c7e14c7515c7.png"><action name="Execute"><command><![CDATA[/home/ypraw/.local/share/mendeleydesktop]]></command></action></item>
+    <item label="Mendeley Desktop" icon="/home/ypraw/.config/obmenu-generator/icons/3b2c569cdb1b8cd8a0f8c7e14c7515c7.png"><action name="Execute"><command><![CDATA[mendeleydesktop]]></command></action></item>
+  </menu>
+  <menu id="0.509580683751615" icon="/home/ypraw/.config/obmenu-generator/icons/1646a5d9f6206bd0435ee7ea5a2cacef.png" label="Graphics">
+    <item label="Gwenview" icon="/home/ypraw/.config/obmenu-generator/icons/81ffdc0e27fa1509bb1b3ec7eebe9787.png"><action name="Execute"><command><![CDATA[gwenview]]></command></action></item>
+    <item label="Inkscape" icon="/home/ypraw/.config/obmenu-generator/icons/7ddd57cfc5c276c698a939754dc73947.png"><action name="Execute"><command><![CDATA[inkscape]]></command></action></item>
+    <item label="Krita" icon="/home/ypraw/.config/obmenu-generator/icons/d8fee1fd6af06f5059b53d71c9c6fa6a.png"><action name="Execute"><command><![CDATA[krita]]></command></action></item>
+    <item label="LibreOffice Draw" icon="/home/ypraw/.config/obmenu-generator/icons/d3035f4512a20e0bec193bf5c1e4704b.png"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="LXImage" icon="/home/ypraw/.config/obmenu-generator/icons/81ffdc0e27fa1509bb1b3ec7eebe9787.png"><action name="Execute"><command><![CDATA[lximage-qt]]></command></action></item>
+    <item label="Okular" icon="/home/ypraw/.config/obmenu-generator/icons/2abe6d687bda70ad69803c15994c74cc.png"><action name="Execute"><command><![CDATA[okular]]></command></action></item>
+    <item label="Screenshot" icon="/home/ypraw/.config/obmenu-generator/icons/c5de8e49814e732a6189ea796d3b883e.png"><action name="Execute"><command><![CDATA[lximage-qt --screenshot]]></command></action></item>
+    <item label="Skanlite" icon="/home/ypraw/.config/obmenu-generator/icons/e6a9a18d40bf89d3b3e057d5f38e6197.png"><action name="Execute"><command><![CDATA[skanlite -qwindowtitle]]></command></action></item>
+  </menu>
+  <menu id="0.756135992368474" icon="/home/ypraw/.config/obmenu-generator/icons/bca836a1cfd6b83cac8e6025c64ae870.png" label="Multimedia">
+    <item label="Audacity" icon="/home/ypraw/.config/obmenu-generator/icons/fc9b6fcb37e50bd3e9d49269559a7c30.png"><action name="Execute"><command><![CDATA[env UBUNTU_MENUPROXY=0 audacity]]></command></action></item>
+    <item label="Cantata" icon="/home/ypraw/.config/obmenu-generator/icons/17c5c7c7ecc993edad2c652fe1178290.png"><action name="Execute"><command><![CDATA[cantata]]></command></action></item>
+    <item label="JuK" icon="/home/ypraw/.config/obmenu-generator/icons/b9bdc393d36ab223538401cd6f9d84c3.png"><action name="Execute"><command><![CDATA[juk -caption]]></command></action></item>
+    <item label="K3b" icon="/home/ypraw/.config/obmenu-generator/icons/726aa942a43039c85fd84f722cd5ed68.png"><action name="Execute"><command><![CDATA[k3b]]></command></action></item>
+    <item label="Kdenlive" icon="/home/ypraw/.config/obmenu-generator/icons/62728c6ff2bbbf0e4663086ee2c242f6.png"><action name="Execute"><command><![CDATA[kdenlive]]></command></action></item>
+    <item label="LMMS" icon="/home/ypraw/.config/obmenu-generator/icons/9cab63822985b11b160a75281b2d61f4.png"><action name="Execute"><command><![CDATA[env QT_X11_NO_NATIVE_MENUBAR=1 lmms]]></command></action></item>
+    <item label="PulseAudio Equalizer" icon="/home/ypraw/.config/obmenu-generator/icons/cb611a4a77876c071c70555eaf7a4bc0.png"><action name="Execute"><command><![CDATA[pulseaudio-equalizer-gtk]]></command></action></item>
+    <item label="Qt V4L2 test Utility" icon="/home/ypraw/.config/obmenu-generator/icons/d7d8f5be7f1deba3edfc184eaf09f566.png"><action name="Execute"><command><![CDATA[qv4l2]]></command></action></item>
+    <item label="Spotify" icon="/home/ypraw/.config/obmenu-generator/icons/37371250ced89c855645540994cd6d78.png"><action name="Execute"><command><![CDATA[spotify]]></command></action></item>
+    <item label="VLC media player" icon="/home/ypraw/.config/obmenu-generator/icons/1d16cc46ff1fd6e9f90843818f483fc0.png"><action name="Execute"><command><![CDATA[/usr/bin/vlc --started-from-file]]></command></action></item>
+  </menu>
+  <menu id="0.756518773487173" icon="/home/ypraw/.config/obmenu-generator/icons/e430ebefaa793d34270a28c0dac0ea74.png" label="Network">
+    <item label="Avahi SSH Server Browser" icon="/home/ypraw/.config/obmenu-generator/icons/f3de54a42336994d858ebe1aa488111c.png"><action name="Execute"><command><![CDATA[/usr/bin/bssh]]></command></action></item>
+    <item label="Avahi VNC Server Browser" icon="/home/ypraw/.config/obmenu-generator/icons/f3de54a42336994d858ebe1aa488111c.png"><action name="Execute"><command><![CDATA[/usr/bin/bvnc]]></command></action></item>
+    <item label="Firefox" icon="/home/ypraw/.config/obmenu-generator/icons/f94854d0e9c01bba8969f33592a780cf.png"><action name="Execute"><command><![CDATA[/usr/lib/firefox/firefox]]></command></action></item>
+    <item label="Google Chrome" icon="/home/ypraw/.config/obmenu-generator/icons/90034ef990f9e0632b567b3877afacd3.png"><action name="Execute"><command><![CDATA[/usr/bin/google-chrome-stable]]></command></action></item>
+    <item label="KDE Connect Indicator" icon="/home/ypraw/.config/obmenu-generator/icons/fcfe67ca1077c21637a49c524369f381.png"><action name="Execute"><command><![CDATA[kdeconnect-indicator]]></command></action></item>
+    <item label="KGet" icon="/home/ypraw/.config/obmenu-generator/icons/687a6bd22766d92fa7ede2ae0c7036a1.png"><action name="Execute"><command><![CDATA[kget -caption]]></command></action></item>
+    <item label="KNetAttach" icon="/home/ypraw/.config/obmenu-generator/icons/d72c92b77024b2d9a9eccb23cf89e23d.png"><action name="Execute"><command><![CDATA[knetattach]]></command></action></item>
+    <item label="Konversation" icon="/home/ypraw/.config/obmenu-generator/icons/273cb81e089fdf98a5502a3806783f61.png"><action name="Execute"><command><![CDATA[konversation -qwindowtitle]]></command></action></item>
+    <item label="Opera" icon="/home/ypraw/.config/obmenu-generator/icons/d70e6606de027e37a001c3620fec6a24.png"><action name="Execute"><command><![CDATA[opera]]></command></action></item>
+    <item label="qBittorrent" icon="/home/ypraw/.config/obmenu-generator/icons/e499e1c857f1477c0e050a3942f3df67.png"><action name="Execute"><command><![CDATA[qbittorrent]]></command></action></item>
+    <item label="Telegram Desktop" icon="/home/ypraw/.config/obmenu-generator/icons/625476eec52f1654b725fd7ce7a55b84.png"><action name="Execute"><command><![CDATA[/home/ypraw/Programs/Telegram/Telegram --]]></command></action></item>
+    <item label="Thunderbird Mail" icon="/home/ypraw/.config/obmenu-generator/icons/f3b702ba6bcc2864968603645a53d0bf.png"><action name="Execute"><command><![CDATA[/usr/lib/thunderbird/thunderbird]]></command></action></item>
+  </menu>
+  <menu id="0.885748675229788" icon="/home/ypraw/.config/obmenu-generator/icons/8e725b78ff46f22d66e81ee5ebab9da4.png" label="Office">
+    <item label="LibreOffice Base" icon="/home/ypraw/.config/obmenu-generator/icons/573013e7e608fd98855030ecea9ea758.png"><action name="Execute"><command><![CDATA[libreoffice --base]]></command></action></item>
+    <item label="LibreOffice Calc" icon="/home/ypraw/.config/obmenu-generator/icons/725924797969bbcc91d68c0c98dc28d2.png"><action name="Execute"><command><![CDATA[libreoffice --calc]]></command></action></item>
+    <item label="LibreOffice Draw" icon="/home/ypraw/.config/obmenu-generator/icons/d3035f4512a20e0bec193bf5c1e4704b.png"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="LibreOffice Impress" icon="/home/ypraw/.config/obmenu-generator/icons/864252f45a97465dc962a4c10e364043.png"><action name="Execute"><command><![CDATA[libreoffice --impress]]></command></action></item>
+    <item label="LibreOffice Math" icon="/home/ypraw/.config/obmenu-generator/icons/4fc80c5e93b823c0205dfb797261ed65.png"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+    <item label="LibreOffice Writer" icon="/home/ypraw/.config/obmenu-generator/icons/faf2aa64b43dd254ddb84b0feda100da.png"><action name="Execute"><command><![CDATA[libreoffice --writer]]></command></action></item>
+    <item label="LibreOffice" icon="/home/ypraw/.config/obmenu-generator/icons/73bd6f6011e91969261e90e87247e8d2.png"><action name="Execute"><command><![CDATA[libreoffice]]></command></action></item>
+    <item label="Okular" icon="/home/ypraw/.config/obmenu-generator/icons/2abe6d687bda70ad69803c15994c74cc.png"><action name="Execute"><command><![CDATA[okular]]></command></action></item>
+  </menu>
+  <menu id="0.529143899254528" icon="/home/ypraw/.config/obmenu-generator/icons/f209583ef696530c337b59f2fcbce5cc.png" label="Other">
+    <item label="Help" icon="/home/ypraw/.config/obmenu-generator/icons/33476dd92fc998158905cd81bc8cabd7.png"><action name="Execute"><command><![CDATA[khelpcenter]]></command></action></item>
+    <item label="Vysor" icon="/home/ypraw/.config/obmenu-generator/icons/07d82a766e2baffa51b4d3f62cafef76.png"><action name="Execute"><command><![CDATA[/opt/google/chrome/google-chrome --profile-directory=Default --app-id=gidgenkbbabolejbgbpnhbimgjbffefm]]></command></action></item>
+  </menu>
+  <menu id="0.969653815720822" icon="/home/ypraw/.config/obmenu-generator/icons/e23faf61cc90681a8f35d5f5b9202200.png" label="Settings">
+    <item label="Appearance" icon="/home/ypraw/.config/obmenu-generator/icons/024ad585e383ff6843cd8a557e874e44.png"><action name="Execute"><command><![CDATA[lxqt-config-appearance]]></command></action></item>
+    <item label="Brightness" icon="/home/ypraw/.config/obmenu-generator/icons/b276b7c46bd33f847e2d046be8a14d91.png"><action name="Execute"><command><![CDATA[lxqt-config-brightness]]></command></action></item>
+    <item label="Date and Time" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[lxqt-admin-time]]></command></action></item>
+    <item label="Desktop Notifications" icon="/home/ypraw/.config/obmenu-generator/icons/024ad585e383ff6843cd8a557e874e44.png"><action name="Execute"><command><![CDATA[lxqt-config-notificationd]]></command></action></item>
+    <item label="Desktop" icon="/home/ypraw/.config/obmenu-generator/icons/637853d5dcc5af45e87d38e9824154c3.png"><action name="Execute"><command><![CDATA[pcmanfm-qt --desktop-pref=general]]></command></action></item>
+    <item label="Elementary Configuration" icon="/home/ypraw/.config/obmenu-generator/icons/9beb7aea57772940a2b3d08c296ade01.png"><action name="Execute"><command><![CDATA[elementary_config]]></command></action></item>
+    <item label="File Associations" icon="/home/ypraw/.config/obmenu-generator/icons/1f40731d0677c3a3d28f083e1fc32fdf.png"><action name="Execute"><command><![CDATA[lxqt-config-file-associations]]></command></action></item>
+    <item label="KDE Connect Settings" icon="/home/ypraw/.config/obmenu-generator/icons/fcfe67ca1077c21637a49c524369f381.png"><action name="Execute"><command><![CDATA[kcmshell5 kcm_kdeconnect]]></command></action></item>
+    <item label="KDE System Settings" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[systemsettings5]]></command></action></item>
+    <item label="Keyboard and Mouse" icon="/home/ypraw/.config/obmenu-generator/icons/09237b9f680c7ee61fea58cc69f1ae8c.png"><action name="Execute"><command><![CDATA[lxqt-config-input]]></command></action></item>
+    <item label="Locale" icon="/home/ypraw/.config/obmenu-generator/icons/45c3927197a79b5253b974792a9edb0f.png"><action name="Execute"><command><![CDATA[lxqt-config-locale]]></command></action></item>
+    <item label="LXQt Configuration Center" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[lxqt-config]]></command></action></item>
+    <item label="Manjaro Notifier KDE Settings" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[msm_kde_notifier --settings]]></command></action></item>
+    <item label="Manjaro Settings Manager" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[manjaro-settings-manager]]></command></action></item>
+    <item label="Monitor settings" icon="/home/ypraw/.config/obmenu-generator/icons/a6fcbba7f2e95e1a22a6f3186fcb7f9a.png"><action name="Execute"><command><![CDATA[lxqt-config-monitor]]></command></action></item>
+    <item label="Openbox Configuration Manager" icon="/home/ypraw/.config/obmenu-generator/icons/70197f6366784583c20894048db57138.png"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Openbox Settings" icon="/home/ypraw/.config/obmenu-generator/icons/fe958a05acb458c59556f0e3631f5a6b.png"><action name="Execute"><command><![CDATA[obconf-qt]]></command></action></item>
+    <item label="Power Management" icon="/home/ypraw/.config/obmenu-generator/icons/188e0f2293a023c7e2c929caa2671716.png"><action name="Execute"><command><![CDATA[lxqt-config-powermanagement]]></command></action></item>
+    <item label="Print Settings" icon="/home/ypraw/.config/obmenu-generator/icons/2b8c3bfbd0cdff0c8331e7d019c7f694.png"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="Session Settings" icon="/home/ypraw/.config/obmenu-generator/icons/1f40731d0677c3a3d28f083e1fc32fdf.png"><action name="Execute"><command><![CDATA[lxqt-config-session]]></command></action></item>
+    <item label="Shortcut Keys" icon="/home/ypraw/.config/obmenu-generator/icons/14e6515bcbfe40c29236c6ff1e2665a9.png"><action name="Execute"><command><![CDATA[lxqt-config-globalkeyshortcuts]]></command></action></item>
+    <item label="System Settings" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[systemsettings5]]></command></action></item>
+    <item label="Tint2 Settings" icon="/home/ypraw/.config/obmenu-generator/icons/129a13748e21a98e2525c737084d17a5.png"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+    <item label="Users and Groups" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[lxqt-admin-user]]></command></action></item>
+  </menu>
+  <menu id="0.15294211759533" icon="/home/ypraw/.config/obmenu-generator/icons/1f40731d0677c3a3d28f083e1fc32fdf.png" label="System">
+    <item label="About LXQt" icon="/home/ypraw/.config/obmenu-generator/icons/90d418864a152493f14fb941e9b4da84.png"><action name="Execute"><command><![CDATA[lxqt-about]]></command></action></item>
+    <item label="Avahi Zeroconf Browser" icon="/home/ypraw/.config/obmenu-generator/icons/f3de54a42336994d858ebe1aa488111c.png"><action name="Execute"><command><![CDATA[/usr/bin/avahi-discover]]></command></action></item>
+    <item label="Date and Time" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[lxqt-admin-time]]></command></action></item>
+    <item label="Dolphin" icon="/home/ypraw/.config/obmenu-generator/icons/e5efbf4e419e44944048a84ef6705133.png"><action name="Execute"><command><![CDATA[dolphin]]></command></action></item>
+    <item label="Hibernate" icon="/home/ypraw/.config/obmenu-generator/icons/341bc8f720a9944a8e0014a11cc49012.png"><action name="Execute"><command><![CDATA[lxqt-leave --hibernate]]></command></action></item>
+    <item label="Htop" icon="/home/ypraw/.config/obmenu-generator/icons/8fb1f951b874fe52835317f072046c5d.png"><action name="Execute"><command><![CDATA[xterm -e 'htop']]></command></action></item>
+    <item label="Info Center" icon="/home/ypraw/.config/obmenu-generator/icons/d13869a8a2e737f8d43dfe6c9ca46dc2.png"><action name="Execute"><command><![CDATA[kinfocenter]]></command></action></item>
+    <item label="K3b" icon="/home/ypraw/.config/obmenu-generator/icons/726aa942a43039c85fd84f722cd5ed68.png"><action name="Execute"><command><![CDATA[k3b]]></command></action></item>
+    <item label="KDE Partition Manager" icon="/home/ypraw/.config/obmenu-generator/icons/651a2b9632b4f28fe0ab4f984b7ace61.png"><action name="Execute"><command><![CDATA[partitionmanager]]></command></action></item>
+    <item label="Konsole" icon="/home/ypraw/.config/obmenu-generator/icons/659cbb9566075e99645f47b679c90381.png"><action name="Execute"><command><![CDATA[konsole]]></command></action></item>
+    <item label="KSysGuard" icon="/home/ypraw/.config/obmenu-generator/icons/8fb1f951b874fe52835317f072046c5d.png"><action name="Execute"><command><![CDATA[ksysguard]]></command></action></item>
+    <item label="KSystemLog" icon="/home/ypraw/.config/obmenu-generator/icons/db2b22150e2c2e989fe6f0a663cb09b4.png"><action name="Execute"><command><![CDATA[ksystemlog -qwindowtitle]]></command></action></item>
+    <item label="KWalletManager" icon="/home/ypraw/.config/obmenu-generator/icons/8023b858ab4da48161751c0c2fc4c034.png"><action name="Execute"><command><![CDATA[kwalletmanager5]]></command></action></item>
+    <item label="Leave" icon="/home/ypraw/.config/obmenu-generator/icons/07a9b012a022bd37f0f5ba475acd36ae.png"><action name="Execute"><command><![CDATA[lxqt-leave]]></command></action></item>
+    <item label="Lock Screen" icon="/home/ypraw/.config/obmenu-generator/icons/90b4ab5f312a75913858126f80ab80fa.png"><action name="Execute"><command><![CDATA[lxqt-leave --lockscreen]]></command></action></item>
+    <item label="Logout" icon="/home/ypraw/.config/obmenu-generator/icons/f9a43486ecfbb809c39ddb7cee8224a7.png"><action name="Execute"><command><![CDATA[lxqt-leave --logout]]></command></action></item>
+    <item label="Manage Printing" icon="/home/ypraw/.config/obmenu-generator/icons/2b8c3bfbd0cdff0c8331e7d019c7f694.png"><action name="Execute"><command><![CDATA[/usr/bin/xdg-open http://localhost:631/]]></command></action></item>
+    <item label="Manjaro Hello" icon="/home/ypraw/.config/obmenu-generator/icons/5b1dbeeef1ff0446fc92ca657dcbef25.png"><action name="Execute"><command><![CDATA[/usr/bin/manjaro-hello]]></command></action></item>
+    <item label="Octopi CacheCleaner" icon="/home/ypraw/.config/obmenu-generator/icons/01d171c0481d3a0d030605f3d8df97ab.png"><action name="Execute"><command><![CDATA[octopi-cachecleaner]]></command></action></item>
+    <item label="Octopi" icon="/home/ypraw/.config/obmenu-generator/icons/01d171c0481d3a0d030605f3d8df97ab.png"><action name="Execute"><command><![CDATA[octopi]]></command></action></item>
+    <item label="Print Settings" icon="/home/ypraw/.config/obmenu-generator/icons/2b8c3bfbd0cdff0c8331e7d019c7f694.png"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="QTerminal drop down" icon="/home/ypraw/.config/obmenu-generator/icons/659cbb9566075e99645f47b679c90381.png"><action name="Execute"><command><![CDATA[qterminal --drop]]></command></action></item>
+    <item label="QTerminal" icon="/home/ypraw/.config/obmenu-generator/icons/659cbb9566075e99645f47b679c90381.png"><action name="Execute"><command><![CDATA[qterminal]]></command></action></item>
+    <item label="Reboot" icon="/home/ypraw/.config/obmenu-generator/icons/ed42d1c6bb4ac84715260204ce44ee0c.png"><action name="Execute"><command><![CDATA[lxqt-leave --reboot]]></command></action></item>
+    <item label="Shutdown" icon="/home/ypraw/.config/obmenu-generator/icons/07a9b012a022bd37f0f5ba475acd36ae.png"><action name="Execute"><command><![CDATA[lxqt-leave --shutdown]]></command></action></item>
+    <item label="SUSE Studio Imagewriter" icon="/home/ypraw/.config/obmenu-generator/icons/368e0f01fd92a0e02e0b6e132b64162b.png"><action name="Execute"><command><![CDATA[imagewriter]]></command></action></item>
+    <item label="Suspend" icon="/home/ypraw/.config/obmenu-generator/icons/e9012aee0d36ed51303201c389df9f05.png"><action name="Execute"><command><![CDATA[lxqt-leave --suspend]]></command></action></item>
+    <item label="Task Manager" icon="/home/ypraw/.config/obmenu-generator/icons/8fb1f951b874fe52835317f072046c5d.png"><action name="Execute"><command><![CDATA[xfce4-taskmanager]]></command></action></item>
+    <item label="Termite" icon="/home/ypraw/.config/obmenu-generator/icons/659cbb9566075e99645f47b679c90381.png"><action name="Execute"><command><![CDATA[termite]]></command></action></item>
+    <item label="Tint2" icon="/home/ypraw/.config/obmenu-generator/icons/d470a1e1e3117cdfe0b100bedf557a17.png"><action name="Execute"><command><![CDATA[tint2]]></command></action></item>
+    <item label="Users and Groups" icon="/home/ypraw/.config/obmenu-generator/icons/22b6da13d27f1128b0c427ac9850765c.png"><action name="Execute"><command><![CDATA[lxqt-admin-user]]></command></action></item>
+    <item label="UXTerm" icon="/home/ypraw/.config/obmenu-generator/icons/d15bd38d9e82228a95405ab742277756.png"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
+    <item label="XTerm" icon="/home/ypraw/.config/obmenu-generator/icons/d15bd38d9e82228a95405ab742277756.png"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+    <item label="Yakuake" icon="/home/ypraw/.config/obmenu-generator/icons/7fcd33405f08515c3c30452fe4ad48ed.png"><action name="Execute"><command><![CDATA[yakuake]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="0.0287679371120184" icon="/home/ypraw/.config/obmenu-generator/icons/4fc6eb4f3340f9a0f9bd879f8923a11c.png" label="Advanced Settings">
+    <item label="Conky RC" icon="/home/ypraw/.config/obmenu-generator/icons/83ab459ca63fa658b0a33a702a59ed44.png"><action name="Execute"><command><![CDATA[geany ~/.conkyrc]]></command></action></item>
+    <item label="Tint2 Panel" icon="/home/ypraw/.config/obmenu-generator/icons/83ab459ca63fa658b0a33a702a59ed44.png"><action name="Execute"><command><![CDATA[geany ~/.config/tint2/tint2rc]]></command></action></item>
+  <menu id="0.169842818975191" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png" label="Obmenu-Generator">
+    <item label="Menu Schema" icon="/home/ypraw/.config/obmenu-generator/icons/83ab459ca63fa658b0a33a702a59ed44.png"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Menu Config" icon="/home/ypraw/.config/obmenu-generator/icons/83ab459ca63fa658b0a33a702a59ed44.png"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  <separator/>
+    <item label="Generate a static menu" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+    <item label="Generate a static menu with icons" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+  <separator/>
+    <item label="Generate a dynamic menu" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png"><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+    <item label="Generate a dynamic menu with icons" icon="/home/ypraw/.config/obmenu-generator/icons/8e19d79812dffae45a2afc5b26dabd69.png"><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+  <separator/>
+    <item label="Refresh icon set" icon="/home/ypraw/.config/obmenu-generator/icons/e5a99985a9717b4b8c2b2744c013ec26.png"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+  </menu>
+  <menu id="0.451861021138928" icon="/home/ypraw/.config/obmenu-generator/icons/2f0d3c9fa56d954ec492905ec8e8101e.png" label="Openbox">
+    <item label="Openbox Autostart" icon="/home/ypraw/.config/obmenu-generator/icons/83ab459ca63fa658b0a33a702a59ed44.png"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/autostart]]></command></action></item>
+    <item label="Openbox RC" icon="/home/ypraw/.config/obmenu-generator/icons/83ab459ca63fa658b0a33a702a59ed44.png"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Openbox Menu" icon="/home/ypraw/.config/obmenu-generator/icons/83ab459ca63fa658b0a33a702a59ed44.png"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/menu.xml]]></command></action></item>
+    <item label="Reconfigure Openbox" icon="/home/ypraw/.config/obmenu-generator/icons/2f0d3c9fa56d954ec492905ec8e8101e.png"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
+  </menu>
+  </menu>
+  <separator/>
+    <item label="Lock" icon="/home/ypraw/.config/obmenu-generator/icons/90b4ab5f312a75913858126f80ab80fa.png"><action name="Execute"><command><![CDATA[xscreensaver-command -lock]]></command></action></item>
+    <item label="Exit" icon="/home/ypraw/.config/obmenu-generator/icons/e0f1987f87c36b977891ee25935cc46d.png"><action name="Exit"/></item>
+  </menu>
+</openbox_menu>

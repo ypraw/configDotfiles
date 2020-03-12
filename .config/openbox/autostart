@@ -1,0 +1,30 @@
+#tint2 &
+
+## Set wallpaper
+nitrogen --restore &
+
+## conky
+conky -c ~/.config/conky/syclo/syclo-lime-topleft.conkyrc &
+
+# Compton
+compton --config ~/.config/compton.conf &
+
+## Volume keys daemon
+xfce4-volumed &
+
+## Enable power management
+xfce4-power-manager &
+
+## XFCE4 Settings daemon
+xfsettingsd &
+
+## Start xscreensaver
+xscreensaver -no-splash &
+
+
+# Launch bar1 and bar2
+# polybar -c ~/.config/polybar/config bar1 &
+(sleep 1;polybar -r -c ~/.config/polybar/config bar1) &
+
+
+#(sleep 1;$RUN) &
