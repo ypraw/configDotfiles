@@ -58,3 +58,14 @@ alias lowpc="sudo cpupower frequency-set -g powersave"
 alias updatePkg="~/Programming/linux/configDotfiles/asci_art/colorbars && sudo pacman -Syyu"
 alias updateAur="~/Programming/linux/configDotfiles/asci_art/colorbars && trizen -Syyu"
 alias bootimer="systemd-analyze | lolcat"
+
+
+checkInstall(){
+    if ! sudo pacman -Ss $1 | grep -i 'installed';then
+        printf "sorry the package $1 Not installed on your system :("'\n'
+          printf "did you want to Install $1 [Y/N] ?"
+            if read -q;then
+               echo; sudo pacman -S $1
+            fi
+    fi
+}
