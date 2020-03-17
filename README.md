@@ -6,6 +6,8 @@
 
 ![github](https://img.shields.io/github/license/ypraw/configDotfiles?color=brightgreen&logo=github&logoColor=pink)
 
+![github](https://img.shields.io/github/stars/ypraw/configDotfiles)
+
 # Details Spesifications
 
 | Info                 | Value                         |
