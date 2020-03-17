@@ -8,6 +8,8 @@
 
 ![github](https://img.shields.io/github/stars/ypraw/configDotfiles)
 
+![GitHub repo size](https://img.shields.io/github/repo-size/ypraw/dotfiles?label=Dotfiles%20Size&style=for-the-badge)
+
 # Details Spesifications
 
 | Info                 | Value                         |
