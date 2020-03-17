@@ -4,6 +4,8 @@
 	</a>
 </p>
 
+[!github](https://img.shields.io/github/license/ypraw/configDotfiles?color=brightgreen&logo=github&logoColor=pink)
+
 # Details Spesifications
 
 | Info                 | Value                         |
