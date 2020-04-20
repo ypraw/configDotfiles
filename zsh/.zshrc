@@ -197,8 +197,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # SPACESHIP_EXIT_CODE_SYMBOl="✘ "
 # SPACESHIP_EXIT_CODE_COLOR="red"
 
-export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-export PATH=$HOME/.config/composer/vendor/bin:$PATH
+# export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+# export PATH=$HOME/.config/composer/vendor/bin:$PATH
 export PATH="~/.npm-global/bin:$PATH"
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
