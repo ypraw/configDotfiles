@@ -55,8 +55,10 @@ alias sukate="SUDO_EDITOR=kate sudoedit "
 
 alias powerpc="sudo cpupower frequency-set -g performance"
 alias lowpc="sudo cpupower frequency-set -g powersave"
-alias updatePkg="~/Programming/linux/configDotfiles/asci_art/colorbars && sudo pacman -Syyu"
-alias updateAur="~/Programming/linux/configDotfiles/asci_art/colorbars && trizen -Syyu"
+# alias updatePkg="~/Programming/linux/configDotfiles/asci_art/colorbars && sudo pacman -Syyu"
+# alias updateAur="~/Programming/linux/configDotfiles/asci_art/colorbars && trizen -Syyu"
+alias gen-mirror="sudo reflector --verbose --latest 5 --sort rate --protocol https --protocol http --save /etc/pacman.d/mirrorlist; sudo pacman -Syyu"
+alias gen-mirror-local="sudo reflector  --verbose --protocol http --protocol https --sort rate -c Singapore -c Thailand -c Indonesia  --latest 50  --save /etc/pacman.d/mirrorlist; sudo pacman -Syyu"
 alias bootimer="systemd-analyze | lolcat"
 alias memdf="pydf"
 
