@@ -223,7 +223,7 @@ Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk desktop li
   ```
 - wait until installation process is complete XD.
 
-- and you can install other cool stuff like tty-clock, glava, cava, etc XD
+- and you can install another cool stuff like tty-clock, glava, cava, etc XD
 
 - happy ricing XD
 
