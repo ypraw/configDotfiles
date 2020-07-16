@@ -31,6 +31,9 @@ zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
 
 #zplug "zsh-users/zsh-syntax-highlighting", defer:2, as:plugin
 
+
+#git flow
+zplug "bobthecow/git-flow-completion", defer:2, as:plugin
 zplug "zsh-users/zsh-autosuggestions", defer:2, as:plugin
 
 #zplug "zpm-zsh/ls", defer:2, as:plugin
