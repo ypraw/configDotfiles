@@ -71,3 +71,9 @@ checkInstall(){
             fi
     fi
 }
+
+function gdrive_download () {
+  CONFIRM=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://drive.google.com/u/0/uc?id=$1&export=download" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
+  wget --load-cookies /tmp/cookies.txt "https://drive.google.com/u/0/uc?id=$1&export=download&confirm=$CONFIRM" -O $2
+  rm -rf /tmp/cookies.txt
+}

@@ -3,23 +3,23 @@
 #define C_LINE 1
 
 /* Width (in pixels) of each bar */
-#define BAR_WIDTH 10
+#define BAR_WIDTH 15
 /* Width (in pixels) of each bar gap */
 #define BAR_GAP 2
 /* Outline color */
-#define BAR_OUTLINE #029aa5
+#define BAR_OUTLINE #c39ab5
 /* Outline width (in pixels, set to 0 to disable outline drawing) */
 #define BAR_OUTLINE_WIDTH 0
 /* Amplify magnitude of the results each bar displays */
-#define AMPLIFY 200
+#define AMPLIFY 500
 /* Alpha channel for bars color */
 #define ALPHA 0.8
 /* How strong the gradient changes */
 #define GRADIENT_POWER 100
 /* Bar color changes with height */
-#define GRADIENT (d / GRADIENT_POWER + 1)
+#define GRADIENT (d / GRADIENT_POWER + 0.6)
 /* Bar color */
-#define COLOR (#fe6637 * GRADIENT * ALPHA)
+#define COLOR (#c39ab5 * GRADIENT * ALPHA)
 /* Direction that the bars are facing, 0 for inward, 1 for outward */
 #define DIRECTION 0
 /* Whether to switch left/right audio buffers */
