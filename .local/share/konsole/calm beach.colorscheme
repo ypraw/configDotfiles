@@ -1,5 +1,5 @@
 [Background]
-Color=27,44,55
+Color=40,40,40
 RandomHueRange=360
 RandomSaturationRange=100
 
@@ -9,7 +9,7 @@ RandomHueRange=360
 RandomSaturationRange=100
 
 [BackgroundIntense]
-Color=27,44,55
+Color=40,40,40
 RandomHueRange=360
 RandomSaturationRange=100
 
@@ -41,7 +41,7 @@ Color=240,166,167
 Color=240,166,167
 
 [Color3]
-Color=255,144,130
+Color=197,110,100
 
 [Color3Faint]
 Color=255,144,130
@@ -50,13 +50,13 @@ Color=255,144,130
 Color=255,144,130
 
 [Color4]
-Color=240,166,167
+Color=197,110,100
 
 [Color4Faint]
 Color=240,166,167
 
 [Color4Intense]
-Color=240,166,167
+Color=197,110,100
 
 [Color5]
 Color=0,132,141
@@ -68,7 +68,7 @@ Color=0,132,141
 Color=0,132,141
 
 [Color6]
-Color=255,144,130
+Color=197,110,100
 
 [Color6Faint]
 Color=255,144,130
@@ -104,5 +104,5 @@ RandomSaturationRange=100
 Blur=true
 ColorRandomization=false
 Description=calm beach
-Opacity=0.77
+Opacity=0.81
 Wallpaper=

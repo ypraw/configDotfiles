@@ -89,7 +89,8 @@ Color=217,198,170
 Color=217,198,170
 
 [General]
-Blur=true
+Blur=false
+ColorRandomization=false
 Description=Gruvbox
-Opacity=0.71
+Opacity=1
 Wallpaper=
