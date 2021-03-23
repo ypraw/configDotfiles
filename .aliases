@@ -38,6 +38,9 @@ alias php-server-status="sudo systemctl status httpd mysqld |  grep -i --max-cou
 
 alias php-server-restart="sudo systemctl restart httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 
+alias activate-postgresql="sudo systemctl start postgresql | sudo systemctl status postgresql.service | grep -i --max-count=4 'postgresql.service - PostgreSQL database server\| Active:'"
+alias deactivate-postgresql="sudo systemctl stop postgresql | sudo systemctl status postgresql.service | grep -i --max-count=4 'postgresql.service - PostgreSQL database server\| Active:'"
+alias status-postgresql="sudo systemctl status postgresql.service | grep -i --max-count=4 'postgresql.service - PostgreSQL database server\| Active:'"
 #alias weather-check="curl wttr.in/Semarang\?0"
 
 # ls info
@@ -70,6 +73,19 @@ checkInstall(){
                echo; sudo pacman -S $1
             fi
     fi
+}
+
+setFrequencyCpu(){
+    currentFreq=$(cat /proc/cpuinfo | grep 'MHz')
+    printf "Your Current CPU Frequency\n$currentFreq\n\n"
+    printf "Do you want to scalling your cpu frequency ?"'\n'
+    printf "Input frequency as GHz like 1/3.3/etc ";read freq
+        if [[ $freq ]]
+        then
+            echo; sudo cpupower frequency-set -f $freq\GHz && sleep 0.5;
+            echo;cat /proc/cpuinfo | grep 'MHz'
+        fi
+
 }
 
 function gdrive_download () {
