@@ -1,11 +1,13 @@
 ac
 acpi_call
 aesni_intel
+aes_x86_64
 af_alg
 agpgart
 ahci
 algif_hash
 algif_skcipher
+arc4
 at24
 atkbd
 authenc
@@ -57,8 +59,10 @@ input_leds
 intel_cstate
 intel_gtt
 intel_powerclamp
+intel_rapl
 intel_rapl_common
 intel_rapl_msr
+intel_rapl_perf
 intel_smartconnect
 intel_spi
 intel_spi_platform
@@ -73,6 +77,7 @@ iwlwifi
 jbd2
 joydev
 kvm
+kvmgt
 kvm_intel
 l2tp_core
 l2tp_netlink
@@ -88,6 +93,8 @@ mac80211
 mac_hid
 mbcache
 mc
+mdev
+media
 mei
 mei_hdcp
 mei_me
@@ -99,6 +106,8 @@ nls_cp437
 nls_iso8859_1
 nvram
 ofpart
+pcbc
+pcc_cpufreq
 pcspkr
 ppp_generic
 pppox
@@ -147,6 +156,9 @@ uinput
 usbhid
 uvcvideo
 vfat
+vfio
+vfio_iommu_type1
+vfio_mdev
 videobuf2_common
 videobuf2_memops
 videobuf2_v4l2
@@ -160,3 +172,4 @@ xfrm_user
 xhci_hcd
 xhci_pci
 x_tables
+zram
