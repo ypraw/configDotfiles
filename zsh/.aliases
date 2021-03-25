@@ -8,6 +8,7 @@ mkcd(){
 # weather Jakarta 0 > for current info
 # weather Jakarta 1 > for 1 day
 # etc
+
 weather(){
 curl wttr.in/$1\?$2
 }
@@ -16,11 +17,9 @@ downloadVideo(){
 youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "$1"
 }
 
-#alias lc='colorls -r --sf'
-
 alias downloadmp3='youtube-dl -x --audio-format mp3'
+alias checkmem="sudo ps_mem -S"
 
-alias checkmem="sudo ps_mem -S | lolcat"
 # please check my custom config for neofetch
 # and make sure if the path is right XD
 # if you store the config on ~/config.conf
@@ -38,14 +37,15 @@ alias php-server-status="sudo systemctl status httpd mysqld |  grep -i --max-cou
 
 alias php-server-restart="sudo systemctl restart httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 
+
 alias activate-postgresql="sudo systemctl start postgresql | sudo systemctl status postgresql.service | grep -i --max-count=4 'postgresql.service - PostgreSQL database server\| Active:'"
 alias deactivate-postgresql="sudo systemctl stop postgresql | sudo systemctl status postgresql.service | grep -i --max-count=4 'postgresql.service - PostgreSQL database server\| Active:'"
 alias status-postgresql="sudo systemctl status postgresql.service | grep -i --max-count=4 'postgresql.service - PostgreSQL database server\| Active:'"
-#alias weather-check="curl wttr.in/Semarang\?0"
 
 # ls info
-alias l="exa -l -h -g -a"
-alias lx="lsd -l --icon-theme unicode"
+
+alias l="exa -laFs Name --group-directories-first"
+
 #update grub
 alias up-grub="sudo mkinitcpio -P linux && sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
