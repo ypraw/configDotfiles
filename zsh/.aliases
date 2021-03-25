@@ -24,7 +24,7 @@ alias checkmem="sudo ps_mem -S"
 # and make sure if the path is right XD
 # if you store the config on ~/config.conf
 # change the this path XD
-alias neo='neofetch --config ~/Programming/linux/configDotfiles/neofetch/config.conf --ascii ~/Programming/linux/configDotfiles/neofetch/ypSig'
+alias neo='neofetch --config ~/.config/neofetch/config.conf --ascii ~/.config//neofetch/ypSig'
 
 alias sysfo='neofetch - --config ~/Programming/linux/configDotfiles/neofetch/configNo.conf  --off'
 
