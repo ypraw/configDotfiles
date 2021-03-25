@@ -44,7 +44,7 @@ alias status-postgresql="sudo systemctl status postgresql.service | grep -i --ma
 #alias weather-check="curl wttr.in/Semarang\?0"
 
 # ls info
-alias l="exa -l -h"
+alias l="exa -l -h -g -a"
 alias lx="lsd -l --icon-theme unicode"
 #update grub
 alias up-grub="sudo mkinitcpio -P linux && sudo grub-mkconfig -o /boot/grub/grub.cfg"
