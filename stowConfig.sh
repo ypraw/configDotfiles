@@ -1,6 +1,5 @@
 #!/bin/bash
-for d in `ls -d */*`:
+for d in `ls -d */`:
 	do
-		printf ' '$d
-		echo '\n'
+		(stow  -R -t ~/ $d)
 done
