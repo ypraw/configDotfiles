@@ -22,17 +22,6 @@ viewType=0
 visibility=0
 wallpaperplugin=org.kde.image
 
-[Containments][1][Applets][2]
-immutability=1
-plugin=org.kde.latte.plasmoid
-
-[Containments][1][Applets][2][Configuration]
-PreloadWeight=0
-
-[Containments][1][Applets][2][Configuration][General]
-isInLatteDock=true
-launchers59=applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:google-chrome.desktop,applications:org.kde.konsole.desktop,applications:telegramdesktop.desktop,applications:systemsettings.desktop,applications:whatsapp-for-linux.desktop
-
 [Containments][1][Applets][20]
 immutability=1
 plugin=org.kde.plasma.bigSur-inlineBattery
@@ -52,7 +41,7 @@ immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][1][Applets][23][Configuration]
-PreloadWeight=15
+PreloadWeight=60
 
 [Containments][1][Applets][23][Configuration][ConfigDialog]
 DialogHeight=540
@@ -66,8 +55,8 @@ v71Migration=true
 v72Migration=true
 
 [Containments][1][Applets][23][Configuration][Google Calendar]
-accessToken=ya29.a0AfH6SMDWzZqdNbtgp7PXpEI6ItWNdYidk3eOO9-YKTqBGnACKmhHObLorz8Aa28-WWffyOoaq0FJIsVQW0O6Sc6zxZA_SNdPWGJUhxiBcB1d3MD059wa-se0shj4erljHdWU4Rs4R6V2cold64oDoq3WWUPvlSM
-accessTokenExpiresAt=466335489
+accessToken=ya29.a0AfH6SMBqbrCKjUSFGzrzNXtT-5e0MB1bytexJXKmWGgMxRlIPDeWOxxcNmuM_wYoCY2I7u-Wx6gdj9G9cTo2iAv4YQjUPYiNFjqsIUvLMPtoD2htdFMVUnOz_8ebX7l557ni4g_ucEIz27iQBBi-yxjWzmfVrK0
+accessTokenExpiresAt=2653967123
 accessTokenType=Bearer
 calendarIdList=addressbook#contacts@group.v.calendar.google.com,en.indonesian#holiday@group.v.calendar.google.com,en.islamic#holiday@group.v.calendar.google.com,yunindyo.prabowo@gmail.com
 calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTU1MDIyOTIxNzAzMjAwMFwiIiwiaWQiOiJjbGFzc3Jvb20xMDU4MTU2MDUxNjM2MDQ2ODk0MjFAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiJJbnRyb2R1Y2UgcHl0aG9uLCBweXRob25pYyB3YXkgbGlrZSBhIHBybyIsInRpbWVab25lIjoiVVRDIiwiY29sb3JJZCI6IjIiLCJiYWNrZ3JvdW5kQ29sb3IiOiIjYjgwNjcyIiwiZm9yZWdyb3VuZENvbG9yIjoiI2ZmZmZmZiIsInNlbGVjdGVkIjp0cnVlLCJhY2Nlc3NSb2xlIjoib3duZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNTg4ODg0NDYzODAyMDAwXCIiLCJpZCI6ImNsYXNzcm9vbTEwMjEzMTYyMjkyNTMxNDAwMjg5N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6IkJlbGFqYXIgUEhQIFBIUCBCYXNpYyB0byBBZHZhbmNlIiwidGltZVpvbmUiOiJVVEMiLCJjb2xvcklkIjoiOCIsImJhY2tncm91bmRDb2xvciI6IiMyMDIxMjQiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJvd25lciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE1ODk5ODMwNTA2MDEwMDBcIiIsImlkIjoiYWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6IkJpcnRoZGF5cyIsImRlc2NyaXB0aW9uIjoiRGlzcGxheXMgYmlydGhkYXlzLCBhbm5pdmVyc2FyaWVzIGFuZCBvdGhlciBldmVudCBkYXRlcyBvZiBwZW9wbGUgaW4gR29vZ2xlIENvbnRhY3RzLiIsInRpbWVab25lIjoiQXNpYS9KYWthcnRhIiwic3VtbWFyeU92ZXJyaWRlIjoiQ29udGFjdHMiLCJjb2xvcklkIjoiOSIsImJhY2tncm91bmRDb2xvciI6IiM3YmQxNDgiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNTk3NDcyMzQwMzA4MDAwXCIiLCJpZCI6ImVuLmluZG9uZXNpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiSG9saWRheXMgaW4gSW5kb25lc2lhIiwiZGVzY3JpcHRpb24iOiJIb2xpZGF5cyBhbmQgT2JzZXJ2YW5jZXMgaW4gSW5kb25lc2lhIiwidGltZVpvbmUiOiJBc2lhL0pha2FydGEiLCJzdW1tYXJ5T3ZlcnJpZGUiOiJIb2xpZGF5cyBpbiBJbmRvbmVzaWEiLCJjb2xvcklkIjoiOCIsImJhY2tncm91bmRDb2xvciI6IiMxNmE3NjUiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjA1NTA4NDQyODc1MDAwXCIiLCJpZCI6Inl1bmluZHlvLnByYWJvd29AZ21haWwuY29tIiwic3VtbWFyeSI6Inl1bmluZHlvLnByYWJvd29AZ21haWwuY29tIiwidGltZVpvbmUiOiJBc2lhL0pha2FydGEiLCJjb2xvcklkIjoiMTQiLCJiYWNrZ3JvdW5kQ29sb3IiOiIjOWZlMWU3IiwiZm9yZWdyb3VuZENvbG9yIjoiIzAwMDAwMCIsInNlbGVjdGVkIjp0cnVlLCJhY2Nlc3NSb2xlIjoib3duZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbeyJtZXRob2QiOiJwb3B1cCIsIm1pbnV0ZXMiOjMwfV0sIm5vdGlmaWNhdGlvblNldHRpbmdzIjp7Im5vdGlmaWNhdGlvbnMiOlt7InR5cGUiOiJldmVudENyZWF0aW9uIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudENoYW5nZSIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRDYW5jZWxsYXRpb24iLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50UmVzcG9uc2UiLCJtZXRob2QiOiJlbWFpbCJ9XX0sInByaW1hcnkiOnRydWUsImNvbmZlcmVuY2VQcm9wZXJ0aWVzIjp7ImFsbG93ZWRDb25mZXJlbmNlU29sdXRpb25UeXBlcyI6WyJoYW5nb3V0c01lZXQiXX19LHsia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTYwNTUwODQ0Mzc0OTAwMFwiIiwiaWQiOiJlbi5pc2xhbWljI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6Ik11c2xpbSBIb2xpZGF5cyIsImRlc2NyaXB0aW9uIjoiTXVzbGltIEhvbGlkYXlzIiwidGltZVpvbmUiOiJBc2lhL0pha2FydGEiLCJjb2xvcklkIjoiOCIsImJhY2tncm91bmRDb2xvciI6IiMxNmE3NjUiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX1d
@@ -133,7 +122,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][1][Applets][4][Configuration]
-PreloadWeight=83
+PreloadWeight=89
 
 [Containments][1][Applets][4][Configuration][General]
 favoritesPortedToKAstats=true
@@ -143,7 +132,7 @@ immutability=1
 plugin=org.kde.plasma.inlineBattery
 
 [Containments][1][Applets][63][Configuration]
-PreloadWeight=30
+PreloadWeight=29
 
 [Containments][1][Applets][63][Configuration][ConfigDialog]
 DialogHeight=540
@@ -155,6 +144,17 @@ iconHeight=11
 iconWidth=24
 padding=4
 
+[Containments][1][Applets][69]
+immutability=1
+plugin=org.kde.latte.plasmoid
+
+[Containments][1][Applets][69][Configuration]
+PreloadWeight=0
+
+[Containments][1][Applets][69][Configuration][General]
+isInLatteDock=true
+launchers59=applications:google-chrome.desktop,applications:whatsapp-for-linux.desktop,applications:visual-studio-code.desktop,applications:org.kde.konsole.desktop,applications:telegramdesktop.desktop,applications:postman.desktop,applications:slack.desktop,applications:webapp-RadioGarden3508.desktop
+
 [Containments][1][Applets][7]
 immutability=1
 plugin=org.kde.plasma.systemtray
@@ -164,7 +164,7 @@ PreloadWeight=100
 SystrayContainmentId=8
 
 [Containments][1][ConfigDialog]
-DialogHeight=953
+DialogHeight=948
 DialogWidth=509
 
 [Containments][1][Configuration]
@@ -172,37 +172,37 @@ PreloadWeight=0
 
 [Containments][1][General]
 activeWindowFilter=FromAllScreens
+addLaunchersInTaskManager=false
 advanced=false
 alignment=10
 alignmentUpgraded=true
 animationLauncherBouncing=false
 animationWindowAddedInGroup=false
 animationWindowInAttention=false
-appletOrder=4;24;26;22;2;63;23;7;25
+appletOrder=4;24;26;22;69;63;23;7;25
 appletShadowsEnabled=false
-autoSizeEnabled=false
 dragActiveWindowEnabled=true
 durationTime=x1
-fittsLawIsRequested=false
 iconSize=28
 inConfigureAppletsMode=true
+lengthExtMargin=2
 maxLength=99
+minLength=90
+mouseWheelActions=false
 panelPosition=10
 panelShadows=false
 panelSize=100
-panelTransparency=76
-plasmaBackgroundForPopups=true
-screenEdgeMargin=8
+panelTransparency=46
+screenEdgeMargin=15
 shadowOpacity=60
 shadowSize=45
 shadows=None
 shadowsUpgraded=true
 showGlow=false
-solidBackgroundForMaximized=true
 splitterPosition=4
 splitterPosition2=6
 tasksUpgraded=true
-thickMargin=19
+thickMargin=15
 titleTooltips=false
 zoomLevel=0
 
@@ -495,6 +495,9 @@ PreloadWeight=0
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
+[Containments][28][Applets][61][Configuration]
+PreloadWeight=42
+
 [Containments][28][Applets][64]
 immutability=1
 plugin=org.kde.plasma.battery
@@ -504,14 +507,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][28][Applets][65][Configuration]
-PreloadWeight=34
+PreloadWeight=18
 
-[Containments][28][Applets][69]
+[Containments][28][Applets][71]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
-[Containments][28][Applets][69][Configuration]
-PreloadWeight=34
+[Containments][28][Applets][71][Configuration]
+PreloadWeight=42
 
 [Containments][28][ConfigDialog]
 DialogHeight=1016
@@ -573,6 +576,9 @@ PreloadWeight=0
 DialogHeight=540
 DialogWidth=720
 
+[Containments][8][Applets][13][Configuration][General]
+raiseMaximumVolume=true
+
 [Containments][8][Applets][14]
 immutability=1
 plugin=org.kde.plasma.clipboard
@@ -599,7 +605,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][62][Configuration]
-PreloadWeight=38
+PreloadWeight=9
 
 [Containments][8][Applets][66]
 immutability=1
@@ -613,14 +619,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][67][Configuration]
-PreloadWeight=64
+PreloadWeight=100
 
-[Containments][8][Applets][68]
+[Containments][8][Applets][70]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
-[Containments][8][Applets][68][Configuration]
-PreloadWeight=34
+[Containments][8][Applets][70][Configuration]
+PreloadWeight=42
 
 [Containments][8][Applets][9]
 immutability=1
@@ -644,14 +650,17 @@ knownItems=org.kde.plasma.bluetooth,org.kde.plasma.nightcolorcontrol,org.kde.kde
 shownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.networkmanagement
 
 [LayoutSettings]
+activities=
 background=
 backgroundStyle=0
 color=blue
 customBackground=
 customTextColor=fcfcfc
+disableBordersForMaximizedWindows=true
 lastUsedActivity=f0868e36-0185-449a-b298-f103bce7fee5
 launchers=
 preferredForShortcutsTouched=false
+sharedLayout=
 showInMenu=true
 textColor=fcfcfc
 version=2

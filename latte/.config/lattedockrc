@@ -1,3 +1,19 @@
+[DownloadDialog Settings]
+eDP Height 1920x1080=470
+eDP Width 1920x1080=700
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[LatteSettingsDialog]
+downloadWindowSize=800,550
+windowSize=700,624
+
+[LatteSettingsDialog][TabLayouts]
+columnWidths=30,77,78,0
+sortColumn=3
+sortOrder=0
+
 [PlasmaThemeExtended]
 outlineWidth=1
 
@@ -12,7 +28,7 @@ currentLayout=My Layout
 lastNonAssignedLayout=My Layout
 launchers=
 memoryUsage=0
-metaPressAndHoldEnabled=true
+metaPressAndHoldEnabled=false
 mouseSensitivity=2
 screenTrackerInterval=2500
 showInfoWindow=true

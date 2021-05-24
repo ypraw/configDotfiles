@@ -89,3 +89,23 @@ setFrequencyCpu(){
         fi
 
 }
+
+battery_limit_activate(){
+    currentStatus=$(sudo echo '\_SB.PCI0.LPC0.EC0.SMBM' | sudo tee /proc/acpi/call | sudo cat /proc/acpi/call | sudo cut -d '' -f1)
+    res='Disable'
+    if (($currentStatus == 0x1))
+    then
+      res='Enable'
+      printf "Your current setting for battery conservation is $res\n"
+      printf "Do you want to disable ?"'\n'
+      printf "Y for disable, n for exit ";read -q answ
+
+      if $answ == 'y'
+      then
+        echo;sudo echo '\_SB.PCI0.LPC0.EC0.VPC0.SBMC 0x05'  | sudo tee /proc/acpi/call | echo '' | sleep 0.5;
+        currentStatus=$(sudo echo '\_SB.PCI0.LPC0.EC0.SMBM' | sudo tee /proc/acpi/call | sudo cat /proc/acpi/call | sudo cut -d '' -f1)
+        printf "Your current setting for battery conservation is $currentStatus\n"
+      fi
+    fi
+
+}

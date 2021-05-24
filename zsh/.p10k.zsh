@@ -52,7 +52,7 @@
     context                   # user@host
     dir                       # current directory
     vcs                       # git status
-    # command_execution_time  # previous command duration
+#     command_execution_time  # previous command duration
     # =========================[ Line #2 ]=========================
     newline                   # \n
     virtualenv              # python virtual environment
@@ -111,7 +111,7 @@
   # typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=
 
   # Show previous command duration only if it's >= 5s.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=5
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
   # Don't show fractional seconds. Thus, 7s rather than 7.3s.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=0
   # Duration format: 1d 2h 3m 4s.

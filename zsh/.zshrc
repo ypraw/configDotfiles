@@ -202,10 +202,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
-export PATH="$PATH:$HOME/.npm/bin"
+# export PATH="$PATH:$HOME/.npm/bin"
 
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH=~/.npm-global/bin:$PATH
