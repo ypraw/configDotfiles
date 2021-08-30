@@ -7,7 +7,7 @@ detailViewIconSize=16
 
 [LatteSettingsDialog]
 downloadWindowSize=800,550
-windowSize=700,624
+windowSize=700,730
 
 [LatteSettingsDialog][TabLayouts]
 columnWidths=30,77,78,0
@@ -18,13 +18,17 @@ sortOrder=0
 outlineWidth=1
 
 [ScreenConnectors]
-10=eDP-1
-11=eDP
+10=eDP-1:::0,0 1920x1080
+11=eDP:::0,0 1920x1080
+12=HDMI-A-0:::1920,0 1920x1080
+13=HDMI-A-1:::1920,0 1920x1080
 
 [UniversalSettings]
 badges3DStyle=false
 canDisableBorders=false
+contextMenuActionsAlwaysShown=
 currentLayout=My Layout
+inAdvancedModeForEditSettings=true
 lastNonAssignedLayout=My Layout
 launchers=
 memoryUsage=0
@@ -32,4 +36,5 @@ metaPressAndHoldEnabled=false
 mouseSensitivity=2
 screenTrackerInterval=2500
 showInfoWindow=true
+singleModeLayoutName=My Layout
 version=2
