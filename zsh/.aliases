@@ -74,6 +74,11 @@ checkInstall(){
     fi
 }
 
+# alias docker
+alias start-docker="sudo systemctl start docker.service"
+alias start-docker-compose="docker-compose up -d"
+alias docker-postgres="cd ~/Programming/postgres && docker-compose up -d && cd"
+
 # alias scalling cpu
 alias powerpc="sudo cpupower frequency-set -g performance"
 alias lowpc="sudo cpupower frequency-set -g powersave"

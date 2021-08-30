@@ -202,7 +202,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
-# export PATH="$PATH:$HOME/.npm/bin"
+NPM_PACKAGES="${HOME}/.npm-packages"
+
+export PATH="$PATH:$NPM_PACKAGES/bin"
+
+# Preserve MANPATH if you already defined it somewhere in your config.
+# Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
+# export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 # [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
@@ -210,4 +216,5 @@ export PATH=$HOME/.config/composer/vendor/bin:$PATH
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH=~/.npm-global/bin:$PATH
+# export PATH=~/.npm-global/bin:$PATH
+source /usr/share/nvm/init-nvm.sh
