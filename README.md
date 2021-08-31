@@ -44,7 +44,7 @@
 | :------------------- | :---------------------------- |
 | OS                   | Manjaro                       |
 | Desktop Environtment | KDE Plasma                    |
-| Device Host          | Lenovo Thinkpad T440          |
+| Device Host          | Lenovo IdeaPad Flex 5         |
 | Shell                | Zsh, bash                     |
 | DM                   | sddm                          |
 | WM                   | kwin, openbox                 |
