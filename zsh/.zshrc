@@ -218,3 +218,4 @@ export PATH="$PATH:$NPM_PACKAGES/bin"
 
 # export PATH=~/.npm-global/bin:$PATH
 source /usr/share/nvm/init-nvm.sh
+export PATH=$PATH:/opt/apache-spark/bin
