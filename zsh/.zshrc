@@ -22,14 +22,15 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug 'hlissner/zsh-autopair', defer:2, as:plugin
 zplug "lib/history",      from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
-zplug "lib/termsupport", from:oh-my-zsh
-zplug "lib/completion", from:oh-my-zsh
-zplug "lib/theme-and-appearance", from:oh-my-zsh
+# zplug "lib/termsupport", from:oh-my-zsh
+#zplug "lib/completion", from:oh-my-zsh
+# zplug "marlonrichert/zsh-autocomplete", defer:2, as:plugin
+# zplug "lib/theme-and-appearance", from:oh-my-zsh
 zplug "Jguer/yay", use:completions/zsh
 # syntax hightlight
 zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()', as:plugin
 
-#zplug "zsh-users/zsh-syntax-highlighting", defer:2, as:plugin
+zplug "zsh-users/zsh-syntax-highlighting", defer:2, as:plugin
 
 
 #git flow
