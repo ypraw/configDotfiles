@@ -114,3 +114,8 @@ battery_limit_activate(){
     fi
 
 }
+
+alias sudo="sudo "
+alias apt="pacman "
+alias search="-Ss "
+alias install="-S "
