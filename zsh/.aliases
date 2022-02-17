@@ -1,11 +1,11 @@
 mkcd(){
-  mkdir -p "$1"
-  cd "$1"
+    mkdir -p "$1"
+    cd "$1"
 }
 function gdrive_download () {
-  CONFIRM=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://drive.google.com/u/0/uc?id=$1&export=download" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
-  wget --load-cookies /tmp/cookies.txt "https://drive.google.com/u/0/uc?id=$1&export=download&confirm=$CONFIRM" -O $2
-  rm -rf /tmp/cookies.txt
+    CONFIRM=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://drive.google.com/u/0/uc?id=$1&export=download" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
+    wget --load-cookies /tmp/cookies.txt "https://drive.google.com/u/0/uc?id=$1&export=download&confirm=$CONFIRM" -O $2
+    rm -rf /tmp/cookies.txt
 }
 
 # call from your terminal
@@ -14,11 +14,11 @@ function gdrive_download () {
 # weather Jakarta 1 > for 1 day
 # etc
 weather(){
-curl wttr.in/$1\?$2
+    curl wttr.in/$1\?$2
 }
 
 downloadVideo(){
-youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "$1"
+    youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "$1"
 }
 alias downloadmp3='youtube-dl -x --audio-format mp3'
 
@@ -67,10 +67,10 @@ alias memdf="pydf"
 checkInstall(){
     if ! sudo pacman -Ss $1 | grep -i 'installed';then
         printf "sorry the package $1 Not installed on your system :("'\n'
-          printf "did you want to Install $1 [Y/N] ?"
-            if read -q;then
-               echo; sudo pacman -S $1
-            fi
+        printf "did you want to Install $1 [Y/N] ?"
+        if read -q;then
+            echo; sudo pacman -S $1
+        fi
     fi
 }
 
@@ -87,12 +87,12 @@ setFrequencyCpu(){
     printf "Your Current CPU Frequency\n$currentFreq\n\n"
     printf "Do you want to scalling your cpu frequency ?"'\n'
     printf "Input frequency as GHz like 1/3.3/etc ";read freq
-        if [[ $freq ]]
-        then
-            echo; sudo cpupower frequency-set -f $freq\GHz && sleep 0.5;
-            echo;cat /proc/cpuinfo | grep 'MHz'
-        fi
-
+    if [[ $freq ]]
+    then
+        echo; sudo cpupower frequency-set -f $freq\GHz && sleep 0.5;
+        echo;cat /proc/cpuinfo | grep 'MHz'
+    fi
+    
 }
 
 battery_limit_activate(){
@@ -100,22 +100,41 @@ battery_limit_activate(){
     res='Disable'
     if (($currentStatus == 0x1))
     then
-      res='Enable'
-      printf "Your current setting for battery conservation is $res\n"
-      printf "Do you want to disable ?"'\n'
-      printf "Y for disable, n for exit ";read -q answ
-
-      if $answ == 'y'
-      then
-        echo;sudo echo '\_SB.PCI0.LPC0.EC0.VPC0.SBMC 0x05'  | sudo tee /proc/acpi/call | echo '' | sleep 0.5;
-        currentStatus=$(sudo echo '\_SB.PCI0.LPC0.EC0.SMBM' | sudo tee /proc/acpi/call | sudo cat /proc/acpi/call | sudo cut -d '' -f1)
-        printf "Your current setting for battery conservation is $currentStatus\n"
-      fi
+        res='Enable'
+        printf "Your current setting for battery conservation is $res\n"
+        printf "Do you want to disable ?"'\n'
+        printf "Y for disable, n for exit ";read -q answ
+        
+        if $answ == 'y'
+        then
+            echo;sudo echo '\_SB.PCI0.LPC0.EC0.VPC0.SBMC 0x05'  | sudo tee /proc/acpi/call | echo '' | sleep 0.5;
+            currentStatus=$(sudo echo '\_SB.PCI0.LPC0.EC0.SMBM' | sudo tee /proc/acpi/call | sudo cat /proc/acpi/call | sudo cut -d '' -f1)
+            printf "Your current setting for battery conservation is $currentStatus\n"
+        fi
     fi
-
+    
 }
 
+alias lion-connect="sudo openvpn --config ~/Programming/lion-parcel/client.ovpn"
 alias sudo="sudo "
 alias apt="pacman "
 alias search="-Ss "
 alias install="-S "
+
+function setup_venv(){
+    if [[ $# -eq 0 ]];
+    then
+        echo "Please Insert Virtual Environtment Name\n"; sleep 0.3;
+        echo "Please follow this Instruction"; sleep 0.3;
+        echo "usage :
+          setup_venv {project_name}
+          example:
+        setup_venv hello_world";
+    else
+        venv_name="$1_venv";
+        python -m venv "$(pwd)/${venv_name}"; sleep 0.1;
+        printf "Virtual Environtment created on $(pwd)/${venv_name}\n\n"; sleep 0.2;
+        source "${pwd}/${venv_name}/bin/activate"; sleep 0.2;
+        printf "Virtual Environtment Activated,\n\nPlease Insert this path $(pwd)/${venv_name}/bin/python for run python for this project\n"
+    fi
+}
