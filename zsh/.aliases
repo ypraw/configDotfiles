@@ -92,7 +92,7 @@ setFrequencyCpu(){
         echo; sudo cpupower frequency-set -f $freq\GHz && sleep 0.5;
         echo;cat /proc/cpuinfo | grep 'MHz'
     fi
-    
+
 }
 
 battery_limit_activate(){
@@ -104,7 +104,7 @@ battery_limit_activate(){
         printf "Your current setting for battery conservation is $res\n"
         printf "Do you want to disable ?"'\n'
         printf "Y for disable, n for exit ";read -q answ
-        
+
         if $answ == 'y'
         then
             echo;sudo echo '\_SB.PCI0.LPC0.EC0.VPC0.SBMC 0x05'  | sudo tee /proc/acpi/call | echo '' | sleep 0.5;
@@ -112,7 +112,7 @@ battery_limit_activate(){
             printf "Your current setting for battery conservation is $currentStatus\n"
         fi
     fi
-    
+
 }
 
 alias lion-connect="sudo openvpn --config ~/Programming/lion-parcel/client.ovpn"
@@ -122,19 +122,72 @@ alias search="-Ss "
 alias install="-S "
 
 function setup_venv(){
+
     if [[ $# -eq 0 ]];
     then
         echo "Please Insert Virtual Environtment Name\n"; sleep 0.3;
         echo "Please follow this Instruction"; sleep 0.3;
-        echo "usage :
-          setup_venv {project_name}
-          example:
+        echo "
+        usage :
+        setup_venv {project_name}
+        example:
         setup_venv hello_world";
     else
+
         venv_name="$1_venv";
+        instruction_file=INSTRUCTION_READ_THIS.txt;
+
+        # generated instruction file
+        printf "INSTRUCTION FILE - " > $instruction_file;
+        date >> $instruction_file;
+
         python -m venv "$(pwd)/${venv_name}"; sleep 0.1;
-        printf "Virtual Environtment created on $(pwd)/${venv_name}\n\n"; sleep 0.2;
-        source "${pwd}/${venv_name}/bin/activate"; sleep 0.2;
-        printf "Virtual Environtment Activated,\n\nPlease Insert this path $(pwd)/${venv_name}/bin/python for run python for this project\n"
+        source "$(pwd)/${venv_name}/bin/activate"; sleep 0.2;
+        # Check if requirements.txt is exist
+        if [ ! -f $(pwd)/requirements.txt ]
+        then
+            pip install pandas gspread gspread-dataframe yapf boto3 oauth2client;
+        else
+            pip install -r requirements.txt;
+        fi
+        sleep 0.2;
+        deactivate;
+
+        printf "\n\nVirtual Environtment created on $(pwd)/${venv_name}\n\n\n"; sleep 0.2;
+
+        printf "did you want to activate ${venv_name}? [Y/n]";read -q prompt
+        if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
+        then
+            source "$(pwd)/${venv_name}/bin/activate"; sleep 0.2;
+            printf "\n\nVirtual Environtment Activated\n";sleep 0.2;
+        else
+
+            printf "Please Insert this path $(pwd)/${venv_name}/bin/python for run python for this project\n";sleep 0.2;
+            printf "READ INSTRUCTION.txt for more information :)\n";sleep 0.3;
+        fi
+
+        steps="Read Carefully !!!
+
+          * For testing setup_venvor run $(pwd | awk -F/ '{print $NF}') project via console/terminal,
+
+          PLEASE ACTIVATE ${venv_name} with syntax:
+
+          source $(pwd)/${venv_name}/bin/activate
+
+          * NOTES:
+          * FOR INITIALIZATION PROJECT AND ADDING NEW PACKAGES.
+          After venv activated, PLEASE INSTALL requirements.txt OR ANOTHER DEPENDENCIES IF ANY,
+          use this syntax:
+
+          pip install -r requirements.txt
+
+          * This ${venv_name} automatically installing basic libraries/packages
+          such as pandas, boto3, gspread, gspread_dataframe, yapf, oauth2client.
+
+          > if you need another lib, please make sure that venv is activated using above syntax then
+              you can add packages using pip install
+
+        * FOR PENTAHO PLEASE CALL $(pwd)/${venv_name}/bin/python from pentaho script"
+        echo "$steps" >> $instruction_file;
     fi
 }
