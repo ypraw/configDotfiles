@@ -136,6 +136,8 @@ function setup_venv(){
 
         venv_name="$1_venv";
         instruction_file=INSTRUCTION_READ_THIS.txt;
+        gitignore_file=.gitignore
+        requirements_file=requirements.txt
 
         # generated instruction file
         printf "INSTRUCTION FILE - " > $instruction_file;
@@ -143,12 +145,29 @@ function setup_venv(){
 
         python -m venv "$(pwd)/${venv_name}"; sleep 0.1;
         source "$(pwd)/${venv_name}/bin/activate"; sleep 0.2;
+
+        # check gitignore
+         if [ ! -f $(pwd)/$gitignore_file ]
+         then
+            echo "\n./$venv_name/\n" >> $gitignore_file;
+        else
+            echo "\n./$venv_name/\n" >> $gitignore_file;
+        fi
+
+
         # Check if requirements.txt is exist
         if [ ! -f $(pwd)/requirements.txt ]
         then
             pip install pandas gspread gspread-dataframe yapf boto3 oauth2client;
+            clear; sleep 0.3;
+            echo "Please wait, Generating requirements.txt ...";sleep 0.3;
+            echo "$(pip freeze)" > $requirements_file;
+            echo "Generated $(pwd)/${requirements_file}"; sleep 0.3;
+
+
         else
             pip install -r requirements.txt;
+
         fi
         sleep 0.2;
         deactivate;
@@ -160,26 +179,28 @@ function setup_venv(){
         then
             source "$(pwd)/${venv_name}/bin/activate"; sleep 0.2;
             printf "\n\nVirtual Environtment Activated\n";sleep 0.2;
+            printf "\n\nREAD INSTRUCTION.txt for more information :)\n";sleep 0.3;
         else
-
-            printf "Please Insert this path $(pwd)/${venv_name}/bin/python for run python for this project\n";sleep 0.2;
-            printf "READ INSTRUCTION.txt for more information :)\n";sleep 0.3;
+            printf "\n\nPlease Insert this path $(pwd)/${venv_name}/bin/python for run python for this project\n";sleep 0.2;
+            printf "\n\nREAD INSTRUCTION.txt for more information :)\n";sleep 0.3;
         fi
 
         steps="Read Carefully !!!
 
           * For testing setup_venvor run $(pwd | awk -F/ '{print $NF}') project via console/terminal,
 
-          PLEASE ACTIVATE ${venv_name} with syntax:
+          PLEASE ACTIVATE ${venv_name} using:
 
-          source $(pwd)/${venv_name}/bin/activate
+            source $(pwd)/${venv_name}/bin/activate
 
           * NOTES:
-          * FOR INITIALIZATION PROJECT AND ADDING NEW PACKAGES.
-          After venv activated, PLEASE INSTALL requirements.txt OR ANOTHER DEPENDENCIES IF ANY,
-          use this syntax:
 
-          pip install -r requirements.txt
+          * FOR INITIALIZATION PROJECT AND ADDING NEW PACKAGES.
+           Please activate venv, PLEASE INSTALL requirements.txt OR ANOTHER DEPENDENCIES IF ANY,
+          using:
+
+            pip install -r requirements.txt
+
 
           * This ${venv_name} automatically installing basic libraries/packages
           such as pandas, boto3, gspread, gspread_dataframe, yapf, oauth2client.
@@ -188,6 +209,7 @@ function setup_venv(){
               you can add packages using pip install
 
         * FOR PENTAHO PLEASE CALL $(pwd)/${venv_name}/bin/python from pentaho script"
+
         echo "$steps" >> $instruction_file;
     fi
 }
